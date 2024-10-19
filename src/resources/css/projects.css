@@ -1,0 +1,22 @@
+.list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+
+.listItem{
+    /* background-color: #a79248; */
+    color: #a79248;
+    transition: transform 0.3s ease;
+    margin-left: 10px;
+
+    &:hover{
+      transform: scale(1.1);
+    }
+}
+.codeIcon {
+  text-align: center;
+  font-size: 100px;
+}

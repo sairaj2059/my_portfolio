@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "Source Code Pro";
+  src: url("../fonts/SourceCodePro-VariableFont_wght.ttf") format("truetype");
+}
+
+.socialContainer {
+  width: 80vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.socialMediaIcons {
+  margin-top: 6rem;
+  display: flex;
+  gap: 50px;
+  align-self: center;
+  justify-self: center;
+}
+
+.mediaIcon {
+  font-size: 100px;
+  color: #a79248;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  position: relative;
+
+  &:hover {
+    transform: scale(1.2);
+    z-index: 1;
+  }
+}

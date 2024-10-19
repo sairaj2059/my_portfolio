@@ -1,0 +1,79 @@
+
+:root{
+    --blueBtn: #a79248;
+}
+.activeOpenBtn{
+    background-color: rgb(228, 228, 228);
+    background-color: var(--blueBtn);
+    color: white;
+    transition: 0.2s all ease-in-out;
+    border-radius: 7px 7px 7px 7px;
+    transform: translateX(-2%) scale(0.8);
+}
+
+.activeCloseBtn{
+    background-color: rgb(228, 228, 228);
+    background-color: var(--blueBtn);
+    color: white;
+    transition: 0.2s all ease-in-out;
+    border-radius: 7px 7px 7px 7px;
+    transform: scale(0.8);
+}
+
+.sideMenuContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.sideFloatClass{
+    opacity: 0;
+    animation-name: slideLeft;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    margin-top: 2%;
+}
+
+.sideMenuContainer .sideMenuLinks{
+    text-decoration: none;
+    color: inherit;
+}
+
+@keyframes slideLeft {
+    from{
+        opacity: 0;
+        transform: translateX(-5%);
+    }
+    to{
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+.sideFloatClass{
+    opacity: 0;
+    animation-name: slideLeft;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    margin-top: 2%;
+}
+
+.MainContainer{
+    display: flex;
+    height: 100vh;
+    /* background-image: url("../images/wallpaper1.jpg"); */
+    background: linear-gradient(to right , #fff9e6, #fff9e6);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.MainComponent{
+    border-radius:  14px 14px 14px 14px;
+    padding: 1%;
+    margin-right: 1%;
+    backdrop-filter: blur(3px);
+    height: 90vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
